@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/martgroup_daily_pager_container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/pager_height"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/pager_cover_image"
+        android:layout_width="@dimen/pager_height"
+        android:layout_height="@dimen/pager_height"
+        android:scaleType="fitXY"
+        tools:src="@drawable/cover_a" />
+
+</LinearLayout>
