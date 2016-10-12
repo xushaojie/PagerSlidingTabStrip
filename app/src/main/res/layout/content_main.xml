@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:gravity="center_horizontal"
-        android:text="Sliding or Click."
+        android:text="Sliding or click image."
         android:textColor="@color/colorAccent"
         android:textSize="16sp" />
 
