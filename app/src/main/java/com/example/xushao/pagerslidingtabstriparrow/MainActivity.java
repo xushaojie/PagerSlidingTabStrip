@@ -72,7 +72,6 @@ public class MainActivity extends AppCompatActivity implements TabHost.TabConten
             public void onPageSelected(int position) {
                 mTabSelectedIndex = position;
                 mTabHost.setCurrentTab(position);
-
                 updateTabText(items);// 每次切换后设置选中效果
             }
 
@@ -98,8 +97,8 @@ public class MainActivity extends AppCompatActivity implements TabHost.TabConten
             spec.setContent(this);
 
             View tabLayout = inflater.inflate(R.layout.tabhost_item, null);
-            TextView timeText = (TextView) tabLayout.findViewById(R.id.tabhost_item_time);
-            TextView statusText = (TextView) tabLayout.findViewById(R.id.tabhost_item_status);
+            TextView timeText = (TextView) tabLayout.findViewById(R.id.tabhost_item_title);
+            TextView statusText = (TextView) tabLayout.findViewById(R.id.tabhost_item_desc);
             timeText.setText(item.title);
             statusText.setText(item.desc);
 
@@ -114,8 +113,8 @@ public class MainActivity extends AppCompatActivity implements TabHost.TabConten
     private void updateTabText(List<Item> items) {
         for (int i = 0; i < items.size(); i++) {
             View selectTab = mTabHost.getTabWidget().getChildTabViewAt(i);
-            TextView timeText = (TextView) selectTab.findViewById(R.id.tabhost_item_time);
-            TextView statusText = (TextView) selectTab.findViewById(R.id.tabhost_item_status);
+            TextView timeText = (TextView) selectTab.findViewById(R.id.tabhost_item_title);
+            TextView statusText = (TextView) selectTab.findViewById(R.id.tabhost_item_desc);
             if (mTabSelectedIndex == i) {
                 timeText.setTextColor(getResources().getColor(R.color.colorPrimary));
                 statusText.setTextColor(getResources().getColor(R.color.colorPrimary));

@@ -7,23 +7,21 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/tabhost_item_time"
+        android:id="@+id/tabhost_item_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
         android:ellipsize="middle"
         android:singleLine="true"
-        android:textColor="#999999"
         android:textSize="15sp"
         android:textStyle="bold"
-        tools:text="21:00" />
+        tools:text="TITLE" />
 
     <TextView
-        android:id="@+id/tabhost_item_status"
+        android:id="@+id/tabhost_item_desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="6dp"
-        android:textColor="#999999"
         android:textSize="12sp"
-        tools:text="正在开抢" />
+        tools:text="desc" />
 </LinearLayout>
